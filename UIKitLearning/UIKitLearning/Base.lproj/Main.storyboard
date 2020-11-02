@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Cell List Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppCellListScreen" customModule="UIKitLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tCk-wh-82i">
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppCell" rowHeight="74" id="uRE-a1-CAc" customClass="AppCell" customModule="UIKitLearning" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uRE-a1-CAc" id="6UB-cE-lUf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4T-zz-LZ5">
+                                                    <rect key="frame" x="105" y="21" width="189" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hDy-sq-ysD">
+                                                    <rect key="frame" x="35" y="16" width="50" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="3Ff-e1-ck0"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="BLH-Vq-qLH"/>
+                                                        <constraint firstAttribute="width" constant="50" id="ZT8-Xq-qsH"/>
+                                                        <constraint firstAttribute="height" constant="50" id="gaI-eq-fOo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebq-ve-EHN">
+                                                    <rect key="frame" x="304" y="21" width="70" height="32"/>
+                                                    <state key="normal" title="GET">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hDy-sq-ysD" firstAttribute="leading" secondItem="6UB-cE-lUf" secondAttribute="leadingMargin" constant="15" id="4bH-4A-mgI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ebq-ve-EHN" secondAttribute="trailing" constant="20" id="GTM-3p-QuZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="D4T-zz-LZ5" secondAttribute="bottom" constant="10" id="Pu2-Aw-se5"/>
+                                                <constraint firstItem="ebq-ve-EHN" firstAttribute="leading" secondItem="D4T-zz-LZ5" secondAttribute="trailing" constant="10" id="T15-xa-7cp"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="D4T-zz-LZ5" secondAttribute="trailing" constant="100" id="Ues-u4-CZJ"/>
+                                                <constraint firstItem="D4T-zz-LZ5" firstAttribute="top" secondItem="6UB-cE-lUf" secondAttribute="topMargin" constant="10" id="Xo2-aA-tMX"/>
+                                                <constraint firstItem="ebq-ve-EHN" firstAttribute="leading" secondItem="D4T-zz-LZ5" secondAttribute="trailing" constant="10" id="bjz-DE-rTC"/>
+                                                <constraint firstItem="ebq-ve-EHN" firstAttribute="top" secondItem="6UB-cE-lUf" secondAttribute="topMargin" constant="10" id="eMR-C5-F1N"/>
+                                                <constraint firstItem="hDy-sq-ysD" firstAttribute="top" secondItem="6UB-cE-lUf" secondAttribute="topMargin" constant="5" id="flY-S7-D9P"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ebq-ve-EHN" secondAttribute="bottom" constant="10" id="mFV-aP-dg6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hDy-sq-ysD" secondAttribute="bottom" constant="5" id="ol2-fj-u2g"/>
+                                                <constraint firstItem="D4T-zz-LZ5" firstAttribute="leading" secondItem="hDy-sq-ysD" secondAttribute="trailing" constant="20" id="xge-hA-pm3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appButton" destination="ebq-ve-EHN" id="bbO-aQ-IZR"/>
+                                            <outlet property="appIcon" destination="hDy-sq-ysD" id="adm-FZ-Jn3"/>
+                                            <outlet property="appName" destination="D4T-zz-LZ5" id="u0B-8m-d97"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pBW-Ba-rUN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RLX-hl-HWI"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eonhub-app" translatesAutoresizingMaskIntoConstraints="NO" id="aRZ-kw-yui">
+                                <rect key="frame" x="342" y="84" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tKO-c4-0zI"/>
+                                    <constraint firstAttribute="width" constant="50" id="vNI-ZA-yrN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6x-0D-8iM">
+                                <rect key="frame" x="30" y="61" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-Vd-cRg">
+                                <rect key="frame" x="30" y="92" width="154" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="EonHub">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="SFPro-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysi-Vd-cRg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3X2-Vy-hL1"/>
+                            <constraint firstItem="aRZ-kw-yui" firstAttribute="bottom" secondItem="ysi-Vd-cRg" secondAttribute="bottom" id="HQi-Y5-6tp"/>
+                            <constraint firstItem="aRZ-kw-yui" firstAttribute="leading" secondItem="ysi-Vd-cRg" secondAttribute="trailing" constant="158" id="P6S-NC-InM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRZ-kw-yui" secondAttribute="trailing" constant="22" id="TqO-i0-G2u"/>
+                            <constraint firstItem="V6x-0D-8iM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WJH-bG-0kg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tCk-wh-82i" secondAttribute="trailing" id="Wm6-nw-V1n"/>
+                            <constraint firstItem="tCk-wh-82i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="aho-Fg-MVG"/>
+                            <constraint firstItem="tCk-wh-82i" firstAttribute="top" secondItem="ysi-Vd-cRg" secondAttribute="bottom" constant="10" id="b8i-gK-7s8"/>
+                            <constraint firstItem="tCk-wh-82i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dji-x0-Y9p"/>
+                            <constraint firstItem="V6x-0D-8iM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="g6I-rJ-HW2"/>
+                            <constraint firstItem="ysi-Vd-cRg" firstAttribute="top" secondItem="V6x-0D-8iM" secondAttribute="bottom" constant="10" id="gDP-Yf-Hvh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tCk-wh-82i" secondAttribute="bottom" id="xLP-mb-4CP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EonHubLogo" destination="aRZ-kw-yui" id="L59-Zw-FN2"/>
+                        <outlet property="tableView" destination="tCk-wh-82i" id="a3P-5C-Un2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eonhub-app" width="200" height="200"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
